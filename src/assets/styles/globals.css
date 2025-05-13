@@ -1,0 +1,278 @@
+/* 页面布局 CSS 变量 */
+:root {
+  /* 头部高度 */
+  --g-header-height: 56px;
+
+  /* 侧边栏宽度 */
+  --g-main-sidebar-width: 80px;
+  --g-sub-sidebar-width: 181px;
+  --g-sub-sidebar-collapse-width: 64px;
+
+  /* 侧边栏 Logo 区域高度 */
+  --g-sidebar-logo-height: 50px;
+
+  /* 标签栏高度 */
+  --g-tabbar-height: 50px;
+
+  /* 工具栏高度 */
+  --g-toolbar-height: 56px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+/* textarea 字体跟随系统 */
+textarea {
+  font-family: inherit;
+}
+
+.PageMain {
+  /* margin: 0 16px; */
+}
+
+.PageMain .grid-content {
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 16px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.PageMain .grid-content.min-height436 {
+  min-height: 436px;
+}
+
+.PageMain .grid-content.min-height234 {
+  min-height: 234px;
+}
+
+.PageMain .descriptions {
+  font-size: 20px;
+  font-weight: 600;
+  color: #303e52;
+}
+
+.PageMain .descriptions span {
+  font-size: 16px;
+  font-weight: normal;
+  color: #9da8b6;
+}
+
+.PageMain .buttonBox .btn-icon {
+  width: 10px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.el-button {
+  /* margin-left: 0 !important; */
+  height: 32px;
+  padding: 0 10px;
+}
+
+.el-button + .el-button {
+  margin-left: 10px;
+}
+
+.el-select__wrapper {
+  height: 50px;
+}
+
+.el-input {
+  height: 50px;
+}
+
+.el-textarea__inner {
+  height: 100% !important;
+  min-height: 100% !important;
+}
+
+.el-input-group__append {
+  color: #999;
+  background: transparent;
+}
+
+.slider-block {
+  display: flex;
+  align-items: center;
+}
+
+.input-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-block .separate {
+  padding: 0 15px;
+  font-size: 24px;
+}
+
+.el-slider__runway {
+  height: 8px;
+  background-color: #f6f6f6;
+  border-radius: 4px;
+}
+
+.el-slider__bar {
+  height: 8px;
+  background-color: #3e61ff;
+}
+
+.el-slider__button {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #3e61ff;
+}
+
+.el-radio__inner {
+  /* background-color: #3e61ff;
+  border-color: #3e61ff; */
+  width: 16px;
+  height: 16px;
+}
+
+.el-radio__inner:hover {
+  border-color: #3e61ff;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  background-color: #3e61ff;
+  border-color: #3e61ff;
+}
+
+.el-radio__inner::after {
+  width: 8px;
+  height: 8px;
+}
+
+.el-radio__label {
+  color: #303e52;
+}
+
+.el-radio__input.is-checked + .el-radio__label {
+  color: #303e52;
+}
+
+.el-form-item {
+  display: block;
+}
+
+.el-form-item__label {
+  height: 28px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #303e52;
+}
+
+.el-form-item__label-wrap {
+  margin-left: 0 !important;
+}
+
+/* .el-popper.is-dark,
+.el-popper.is-dark > .el-popper__arrow::before {
+  background: #ecefff !important;
+  border-color: #ecefff;
+} */
+
+.el-table th.el-table__cell {
+  height: 50px;
+  background-color: #f5f6f9 !important;
+  color: #303E52;
+  font-size: 16px;
+  font-weight: 500;
+}
+.el-table td.el-table__cell {
+  height: 50px;
+  color: #303E52;
+  font-size: 16px;
+}
+
+.el-table tr {
+  height: 50px;
+}
+
+/* .el-popper {
+  display: flex;
+  align-items: center;
+  height: 54px;
+} */
+
+.el-switch.is-checked .el-switch__core {
+  height: 32px;
+  background-color: #3e61ff;
+  border-color: #3e61ff;
+}
+
+.el-switch__core {
+  width: 80px;
+  height: 32px;
+  border-radius: 24px;
+}
+
+.el-switch__action {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.el-switch.is-checked .el-switch__core .el-switch__action {
+  left: calc(100% - 25px);
+}
+
+.el-checkbox.el-checkbox--large .el-checkbox__inner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.el-checkbox__inner::after {
+  top: 4px;
+  left: 7px;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: #3e61ff;
+  border-color: #3e61ff;
+}
+
+.border {
+  padding: 15px;
+  border: 1px solid #dae2ea;
+  border-radius: 4px;
+}
+
+.marginBottom40 {
+  margin-bottom: 40px;
+}
+
+.marginBottom16 {
+  margin-bottom: 16px;
+}
+
+.height12 {
+  height: 12px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #3E61FF;
+}
